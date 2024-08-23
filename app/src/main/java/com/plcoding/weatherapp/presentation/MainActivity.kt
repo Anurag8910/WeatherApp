@@ -62,11 +62,11 @@ class MainActivity : ComponentActivity() {
                 Column(
                     modifier = Modifier
                         .fillMaxSize()
-                        .background(DarkBlue)
+                        .background(Color.Green)
                 ) {
                     WeatherCard(
                         state = viewModel.state,
-                        backgroundColor = DeepBlue
+                        backgroundColor  = Color.Green
                     )
                     Spacer(modifier = Modifier.height(16.dp))
                     WeatherForecast(state = viewModel.state)
